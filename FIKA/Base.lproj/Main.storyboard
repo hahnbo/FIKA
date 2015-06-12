@@ -14,6 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ctB-ih-hH3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="zAh-Sr-1X5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_2316.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4L0-c8-0f8">
@@ -65,7 +66,7 @@
                                     <rect key="frame" x="218" y="92" width="80" height="80"/>
                                 </variation>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Type in something interesting" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="50f-iV-daH">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter Your Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="50f-iV-daH">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -73,7 +74,7 @@
                                     <rect key="frame" x="33" y="191" width="265" height="30"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Type another interesting thing" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xNM-pE-MUg">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Type Your Message Here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xNM-pE-MUg">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -85,7 +86,7 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.78062342780770888" blue="0.60868567357542525" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Send Mail">
+                                <state key="normal" title="Send">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -104,6 +105,15 @@
                                     <rect key="frame" x="33" y="92" width="177" height="21"/>
                                 </variation>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YhB-SO-sKn">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="116" width="177" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -113,6 +123,7 @@
                                 <exclude reference="xNM-pE-MUg"/>
                                 <exclude reference="INq-CP-8eP"/>
                                 <exclude reference="t5r-uz-LiT"/>
+                                <exclude reference="YhB-SO-sKn"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,6 +133,7 @@
                                 <include reference="xNM-pE-MUg"/>
                                 <include reference="INq-CP-8eP"/>
                                 <include reference="t5r-uz-LiT"/>
+                                <include reference="YhB-SO-sKn"/>
                             </mask>
                         </variation>
                     </view>
@@ -130,6 +142,7 @@
                         <outlet property="enterNameTextField" destination="50f-iV-daH" id="0b5-ru-Q0e"/>
                         <outlet property="mailButton" destination="INq-CP-8eP" id="ebL-Od-DJb"/>
                         <outlet property="messageLabel" destination="t5r-uz-LiT" id="ZQQ-uv-K0Y"/>
+                        <outlet property="messageLabel2" destination="YhB-SO-sKn" id="cjT-iR-BiF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
